@@ -17,7 +17,7 @@ import java.util.Date;
 @Getter
 @Setter
 public abstract class AuditModel implements Serializable {
-
+    //comentario de prueba
     @Column(nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
