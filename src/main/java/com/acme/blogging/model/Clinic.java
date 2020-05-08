@@ -16,9 +16,9 @@ public class Clinic  extends AuditModel{
     private long id;
 
     @Column(name = "Clinic Name",length = 30,nullable = false)
-    private String clinicname;
+    private String clinicName;
 
     @Column(name = "Quantity Dentist",nullable = false)
-    private long quantitydentist;
+    private long quantityDentist;
 
 }
