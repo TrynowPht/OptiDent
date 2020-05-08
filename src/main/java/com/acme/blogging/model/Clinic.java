@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name = "clinics")
 @Getter
 @Setter
-public class Clinic  {
+public class Clinic  extends AuditModel{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,9 +22,9 @@ public class Clinic  {
 
 
     @Column(name = "Clinic Name",length = 30,nullable = false)
-    private String clinicname;
+    private String clinicName;
 
     @Column(name = "Quantity Dentist",nullable = false)
-    private long quantitydentist;
+    private long quantityDentist;
 
 }
