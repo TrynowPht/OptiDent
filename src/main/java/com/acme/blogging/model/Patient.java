@@ -1,5 +1,6 @@
 package com.acme.blogging.model;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -10,11 +11,11 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name="patients")
+@Table(name="patient")
 @Getter
 @Setter
-@EntityListeners(AuditingEntityListener.class)
-public class Patients extends AuditModel{
+@Data
+public class Patient extends AuditModel{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
