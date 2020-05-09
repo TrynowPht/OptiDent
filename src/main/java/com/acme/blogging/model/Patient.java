@@ -9,6 +9,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Date;
 
 @Entity
 @Table(name="patient")
@@ -59,14 +60,14 @@ public class Patient extends AuditModel{
     @Size(max = 100)
     @Column(nullable=false,updatable=false)
     @Temporal (TemporalType.TIMESTAMP)
-    private String birth;
+    private Date birth;
 
     @NotNull
     @NotBlank
     @Size(max = 100)
     @Column(nullable=false,updatable=false)
     @Temporal (TemporalType.TIMESTAMP)
-    private String inscription;
+    private Date inscription;
 
     @NotNull
     @NotBlank

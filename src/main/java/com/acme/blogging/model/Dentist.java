@@ -7,6 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Date;
 
 @Entity
 @Table(name = "dentist")
@@ -46,8 +47,6 @@ public class Dentist {
     @NotNull
     @NotBlank
     @Size(max = 100)
-    @Column(nullable=false,updatable=false)
-    @Temporal(TemporalType.TIMESTAMP)
     private String address;
 
     @NotNull
@@ -65,7 +64,7 @@ public class Dentist {
     @Size(max = 100)
     @Column(nullable=false,updatable=false)
     @Temporal(TemporalType.TIMESTAMP)
-    private String date;
+    private Date date;
 
     @NotNull
     @NotBlank

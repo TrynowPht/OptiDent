@@ -22,8 +22,7 @@ public class Specialties extends AuditModel{
     @NotBlank
     @Size(max = 100)
     @Column(nullable=false,updatable=false)
-    @Temporal(TemporalType.TIMESTAMP)
-    private Long ga;
+    private String speciality;
 
 
 
