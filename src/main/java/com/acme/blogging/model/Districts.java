@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name = "districts")
 @Getter
 @Setter
-public class Districts {
+public class Districts extends AuditModel{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")

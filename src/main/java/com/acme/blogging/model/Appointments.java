@@ -25,7 +25,6 @@ public class Appointments {
     @DateTimeFormat
     public Date Fecha;
 
-
     @NotNull
     @Lob
     @DateTimeFormat

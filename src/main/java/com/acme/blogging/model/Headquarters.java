@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Table(name = "headquarters")
 @Getter
 @Setter
-public class Headquarters {
+public class Headquarters extends AuditModel{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
@@ -22,7 +22,7 @@ public class Headquarters {
     @JoinColumn(name="post_id", nullable=false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
-    private Post post;
+    private Districts districts;
 
     @Column(name = "Name",length = 30,nullable = false)
     private String nameheadquaters;

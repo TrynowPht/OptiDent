@@ -17,9 +17,8 @@ public class Clinic  extends AuditModel{
     private long id;
 
     @OneToMany(cascade = {CascadeType.PERSIST,CascadeType.MERGE}, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Headquarters_id", referencedColumnName = "ID")
+    @JoinColumn(name="post_id", nullable=false)
     private Headquarters headquarters;
-
 
     @Column(name = "Clinic Name",length = 30,nullable = false)
     private String clinicName;
