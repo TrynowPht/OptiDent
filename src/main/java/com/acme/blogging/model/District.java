@@ -6,15 +6,15 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "districts")
+@Table(name = "district")
 @Getter
 @Setter
-public class Districts extends AuditModel{
+public class District extends AuditModel{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private long id;
 
-    @Column(name = "Districts Name",length = 30,nullable = false)
+    @Column(name = "District Name",length = 30,nullable = false)
     private String districtname;
 }

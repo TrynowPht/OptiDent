@@ -11,10 +11,10 @@ import java.sql.Time;
 import java.util.Date;
 
 @Entity
-@Table(name = " Appointments")
+@Table(name = " Appointment")
 @Getter
 @Setter
-public class Appointments {
+public class Appointment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
